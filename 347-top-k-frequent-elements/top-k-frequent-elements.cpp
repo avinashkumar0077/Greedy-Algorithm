@@ -6,7 +6,7 @@ public:
             freq[num]++;
         }
         priority_queue<pair<int,int>>pq;
-        for(auto it: freq){
+        for(auto & it: freq){
             pq.push({it.second,it.first});
         }
         vector<int>ans;
